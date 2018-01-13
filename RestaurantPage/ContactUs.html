@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact Us</title>
+
+                <link href="https://fonts.googleapis.com/css?family=Damion"
+                        rel="stylesheet"
+                        type="text/css"/>
+                 <link href="https://fonts.googleapis.com/css?family=Kalam" 
+                    rel="stylesheet"
+                    type="text/css"/> 
+                <link rel="stylesheet"
+                        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                <link href="restaurantStyles.css"
+                    rel="stylesheet"
+                    type="text/css"/>
+        <style>
+            
+            .jumbotron {
+                margin-bottom: 0;
+            }
+            .form-horizontal {
+                padding-bottom: 60px;
+                margin-top: 30px;
+                font-family: 'Kalam', cursive;
+            }
+            .container-fluid {
+                padding: 0;
+                margin: 0;
+                background-image: linear-gradient( to right, #e52d27, #b31217);
+            }
+            .control-label {
+                color: #f2f2f2;
+            }
+            .radio-inline {
+                color: #f2f2f2;
+            }
+            .checkbox-inline {
+                color: #f2f2f2;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="jumbotron">
+        <div class="container text-center">
+            <div class="header"> 
+            <h1>Adam's Feedbag</h1>
+            </div>
+        </div>
+        </div>
+         <ul class="nav nav-pills">
+                <li><a href="HomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="MenuPage.html">Menu</a></li>
+                <li class="active"><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Name:</label>
+                    <div class="col-sm-4">
+                     <input type="text" class="form-control" name="Name"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Email:</label>
+                    <div class="col-sm-4">
+                     <input type="text" class="form-control" name="Email"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Phone:</label>
+                    <div class="col-sm-4">
+                     <input type="text" class="form-control" name="Phone"/>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Reason for Inquiry:</label>
+                    <div class="col-sm-4">
+                    <select name="Reason" class="form-control">
+                    <option value="Catering" checked/>Catering</option>
+                    <option value="Private Party"/>Private Party</option>
+                    <option value="Feedback"/>Feedback</option>
+                    <option value="Other"/>Other</option> 
+                    </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Additional Information:</label>
+                    <div class="col-sm-4">
+                    <textarea name="info" class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Have you been to this Restaurant?:</label>
+                    <div class="radio col-sm-4">
+                        <label class="radio-inline">
+                            <input type="radio" name="answer" value="No" checked/>No
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="answer" value="Yes"/>Yes
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2 col-sm-offset-2">Best days to contact you:</label>
+                    <div class="checkbox col-sm-4">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Days" value="Monday"/>M
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Days" value="Tuesday"/>T
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Days" value="Wednesday"/>W
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Days" value="Thursday"/>T
+                        </label>
+                        <label class="checkbox-inline">
+                            <input type="checkbox" name="Days" value="Friday"/>F
+                        </label>
+                </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-1 col-sm-offset-5">
+                    <button type="submit" class="btn btn-default">Send Request</button>
+                    </div>
+                </div>
+                </form>
+            <!--<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>Name:</th>
+            <td><form action="ContactUs.html" method="POST"><input type="text" name="Name"/></form></td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td><form action="ContactUs.html" method="POST"><input type="text" name="Email"/></form></td>
+        </tr>
+        <tr>
+            <th>Phone:</th>
+            <td><form action="ContactUs.html" method="POST"><input type="text" name="Phone"/></form></td>
+        </tr>
+        <tr>
+            <th>Reason for Inquiry:</th>
+            <td><form action="ContactUs.html" method="POST"><select>
+                <option value="Catering" checked/>Catering</option>
+                <option value="Private Party"/>Private Party</option>
+                <option value="Feedback"/>Feedback</option>
+                <option value="Other"/>Other</option>
+                </select>
+                </form></td>
+        </tr>
+        <tr>
+            <th>Additional Information:</th>
+            <td><form action="ContactUs.html" method="POST"><textarea name="Info"></textarea></form></td>
+        </tr>
+        <tr>
+            <th>Have you been to the Restaurant?</th>
+            <td><form action="ContactUs.html" method="POST"><input type="radio" name="no" value="no" checked/>No
+            <input type="radio" name="yes" value="yes"/>Yes</form></td>
+        </tr>
+        <tr>
+            <th>Best days to contact you:</th>
+            <td><form action="ContactUs.html" method="POST"><input type="checkbox" name="Days" value="Monday"/>M
+            <input type="checkbox" name="Days" value="Tuesday"/>T
+            <input type="checkbox" name="Days" value="Wednesday"/>W
+            <input type="checkbox" name="Days" value="Thursday"/>T
+            <input type="checkbox" name="Days" value="Friday"/>F</form></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><form action="ContactUs.html" method="POST"><input type="submit" value="Send Request"/></form></td>
+        </tr>
+    </table>
+    </div>-->
+       <footer class="container-fluid text-center">
+           <div class="footer">
+        <h4>5678 Hello Ave. N, Oakdale, Minnesota, 55128</h4>
+        <h4>651-234-5678</h4>
+           </div>
+       </footer>
+    </div>
+    </body>
+</html>

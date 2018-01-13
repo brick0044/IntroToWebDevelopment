@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/JavaScript" src="LuckySevens.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+
+        <style>
+        h1, input {
+            text-align: center;
+        }
+        h1, h2, input, button, table#results {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        input {
+            position: relative;
+            width: 100px;
+            margin-left: 25px;
+            box-shadow:10px 10px 30px black;
+            font-size: 30px;
+        }
+        h1 {
+            font-family: 'Rock Salt', cursive;
+            font-size: 100px;
+        }
+        h2 {
+            font-family: 'Rock Salt', cursive;
+            font-size: 50px;
+        }
+        button {
+            box-shadow:10px 10px 30px black;
+        }
+        #submitButton, #resetButton {
+            font-size: 30px;
+            font-family: 'Sriracha', cursive;
+        }
+        table#results {
+            width: 60%;
+            height: 200px;
+            border: solid 1px black;
+            position: relative;
+        }
+        .container-fluid {
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        th, td {
+            text-align: left;
+            font-size: 30px;
+            width: 100%;
+            height: 50px;
+            border: solid 1px black;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-family: 'Sriracha', cursive;
+        }
+
+        tr:nth-child(even) {background-color: lightgray;}
+        .form-group#first {
+            font-size: 30px;
+            font-family: 'Sriracha', cursive;
+        }
+        form {
+            margin-bottom: 30px;
+        }
+        hr {
+            margin-bottom: 30px;
+            margin-left: 25%;
+            margin-right: 25%;
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+        }
+ 
+        </style>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+                <h1>Lucky Sevens</h1>
+
+            <form name="LuckySevens" onsubmit="return validateItems();"
+                onreset="resetForm()">
+                <center><div class="form-group" id="first">
+                Starting Bet:<input type="text" id="startingBet" placeholder="$0.00">
+                </div></center>
+                <center><div class="form-group" id="second">
+                <button type="submit" id="submitButton" class="btn btn-default">Play</button>
+                <button type="reset" id="resetButton" class="btn" style="display:none">Reset</button>
+                </div></center>
+        </form>
+        <hr id="line" style="display:none">
+        <center>
+            <table id="results" style="display:none">
+            <h2 id="resultsTag" style="display:none">Results</h2>
+            <tbody>
+                <tr>
+                    <td>Starting Bet:</td>
+                    <td><span id="startBet"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke:</td>
+                    <td><span id="totalRollsBroke"></span></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won:</td>
+                    <td><span id="highestAmount"></span></td>
+                </tr>
+                <tr>
+                    <td>Roll Count at Highest Amount Won:</td>
+                    <td><span id="highestAmountRolls"></span></td>
+                </tr>
+            </tbody>
+        </table>
+        </center>
+        </div>
+    </body>
+</html>

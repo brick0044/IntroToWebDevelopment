@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Adam's Feedbag</title>
+
+            <link href="https://fonts.googleapis.com/css?family=Damion"
+                     rel="stylesheet"
+                    type="text/css"/>
+            <link href="https://fonts.googleapis.com/css?family=Kalam" 
+                    rel="stylesheet"
+                    type="text/css"/>
+            <link rel="stylesheet"
+                    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+            <link href="restaurantStyles.css"
+                    rel="stylesheet"
+                    type="text/css"/>
+        <!--<style>
+            .Navigation a {
+            text-decoration: underline;
+            font-weight: none;
+            }
+            .Navigation a:link {
+            color: blue;
+            }
+            .Navigation a:visited {
+            color: red;
+            }
+            .Navigation a:hover {
+            font-weight: bold;
+            }
+            .Navigation a:active {
+            text-decoration: none;
+            }
+    </style>-->
+        <style>
+        .error-message {
+            text-align: center;
+        }
+        .carousel {
+             background-image: linear-gradient( to right, #e52d27, #b31217);
+         }
+        .carousel .item {
+             min-height: 280px;
+             text-align: center;
+             padding-top: 50px;
+             color: #f2f2f2;
+        }
+        .jumbotron {
+            margin-bottom: 0;
+            margin-right: 0;
+            padding-right: 0;
+        }
+        .container-fluid .Introduction {
+            margin-top: 30px;
+            border: 1px solid black;
+            padding: 10px 10px 60px 10px;
+            background-image: linear-gradient( to right, #e52d27, #b31217);
+            font-family: 'Kalam', cursive;
+            font-size: larger;
+            color: #f2f2f2;
+        }
+        .container-fluid {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="container text-center">
+                <div class="header"> 
+            <h1>Adam's Feedbag</h1>
+                </div>
+            </div>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="HomePage.html"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li><a href="MenuPage.html">Menu</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+        <noscript>
+            <div class="error-message">
+                <h3>We're sorry but our site <strong>requires</strong> JavaScript</br>
+                Go to your browser settings to enable JavaScript</h3>
+            </div>
+        </noscript>
+        <div id="myCarousel" class="carousel slide" data-interval="3000"
+        data-ride="carousel">
+            <!--Carousel Indicators-->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0"
+            class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+            <!--Wrapper for the carousel items-->
+        <div class="carousel-inner">
+            <div class="active item">
+                <h2>We're opening a new location!</h2>
+            </div>
+            <div class="item">
+                <h2>We're rolling out our seasonal menu, with special options for this season.</h2>
+            </div>
+            <div class="item">
+                <h2>The Drink of the Month is Red Kool-Aid</h2>
+            </div>
+        </div>
+            <!-- Carousel controls-->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        </div>
+        <!--<div class="jumbotron">
+            <div class="container-fluid text-center">
+                <h1>Fantastic News!</h1>
+                <p>We are opening a new location in Minneapolis 
+                    in early fall 2018!</br>
+                    We hope to see you there!
+                </p>
+            </div>
+        </div>-->
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-4">
+            <center><img src="Images\chicken.jpg"
+        alt="chicken"
+        style="width:400px; height:150px;"
+        class="img-responsive"/></center>
+                </div>
+            </div>
+            </div>
+            <div class="container-fluid">
+            <div class="row">              
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="Introduction">
+                <p>
+                <b>Welcome Friends!</b><br/>
+            <b>Adam's Feedbag is a family friendly
+             restaurant that provides great food at a 
+             great price! Everything on the menu is prepared to 
+             perfection! With delicious foods from chicken all the way to 
+             sushi, you will be wishing your stomach could hold more!
+             Come for any special occasion and if you are feeling brave 
+             try the Adam's Feedbag Challenge, 5 rotisserie chickens and a pound
+             of french fries!</b>
+             </p>
+                </div>
+            </div>
+            </div>
+            </div>
+        <footer class="container-fluid text-center">
+            <div class="footer">
+             <h4>5678 Hello Ave. N, Oakdale, Minnesota, 55128</h4>
+         <h4>651-234-5678</h4>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
