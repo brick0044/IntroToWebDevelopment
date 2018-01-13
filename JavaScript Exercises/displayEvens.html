@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/JavaScript" src="displayEvens.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            rel="stylesheet" type="text/css"/>
+            
+</head>
+<body>
+<div class="container">
+    <h1>Display Evens</h1>
+    <form name="displayEvens" onsubmit="return validateItems();" 
+          onreset="resetForm();" class="form-inline">
+            <div class="form-group">
+                <label for="startingNumber">Starting Number</label>
+                <input type="number" class="form-control" id="startingNumber">
+            </div>
+            <div class="form-group">
+                <label for="endingNumber">Ending Number</label>
+                <input type="number" class="form-control" id="endingNumber">
+            </div>
+            <div class="form-group">
+                <label for="step">Step</label>
+                <input type="number" class="form-control" id="step">
+            </div>                
+            <button type="submit" id="submitButton" class="btn btn-default">Submit</button>
+            <button type="reset" id="resetButton" class="btn">Reset</button>
+    </form>
+        <table id="results" class="table table-striped" style="display:none">
+        <thead>
+            <tr>
+                <th>Numbers</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Starting Number:</td>
+                <td><span id="startingNum"></span></td>
+            </tr>
+            <tr>
+                <td>Ending Number:</td>
+                <td><span id="endingNum"></span></td>
+            </tr>
+            <tr>
+                <td>Step Number:</td>
+                <td><span id="stepNum"></span></td>
+            </tr>
+            <tr>
+                <td>Result:</td>
+                <td><span id="evens"></span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

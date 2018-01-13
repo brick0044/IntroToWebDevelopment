@@ -18,30 +18,12 @@
             <link href="restaurantStyles.css"
                     rel="stylesheet"
                     type="text/css"/>
-        <!--<style>
-            .Navigation a {
-            text-decoration: underline;
-            font-weight: none;
-            }
-            .Navigation a:link {
-            color: blue;
-            }
-            .Navigation a:visited {
-            color: red;
-            }
-            .Navigation a:hover {
-            font-weight: bold;
-            }
-            .Navigation a:active {
-            text-decoration: none;
-            }
-    </style>-->
         <style>
         .error-message {
             text-align: center;
         }
         .carousel {
-             background-image: linear-gradient( to right, #e52d27, #b31217);
+            background-image: linear-gradient(to right, #000000, #434343);
          }
         .carousel .item {
              min-height: 280px;
@@ -56,12 +38,15 @@
         }
         .container-fluid .Introduction {
             margin-top: 30px;
+            margin-left: 25px;
             border: 1px solid black;
             padding: 10px 10px 60px 10px;
-            background-image: linear-gradient( to right, #e52d27, #b31217);
+            background-image: linear-gradient(to right, #000000, #434343);
             font-family: 'Kalam', cursive;
             font-size: larger;
             color: #f2f2f2;
+            width: 400px;
+
         }
         .container-fluid {
             margin: 0;
@@ -91,14 +76,14 @@
         </noscript>
         <div id="myCarousel" class="carousel slide" data-interval="3000"
         data-ride="carousel">
-            <!--Carousel Indicators-->
+            <!--Indicators-->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0"
             class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-            <!--Wrapper for the carousel items-->
+            <!--Wrapper-->
         <div class="carousel-inner">
             <div class="active item">
                 <h2>We're opening a new location!</h2>
@@ -110,7 +95,7 @@
                 <h2>The Drink of the Month is Red Kool-Aid</h2>
             </div>
         </div>
-            <!-- Carousel controls-->
+            <!-- Controls-->
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
@@ -118,19 +103,10 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
         </div>
-        <!--<div class="jumbotron">
-            <div class="container-fluid text-center">
-                <h1>Fantastic News!</h1>
-                <p>We are opening a new location in Minneapolis 
-                    in early fall 2018!</br>
-                    We hope to see you there!
-                </p>
-            </div>
-        </div>-->
             <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 col-sm-offset-4">
-            <center><img src="Images\chicken.jpg"
+            <center><img src="Images\chicken1.jpg"
         alt="chicken"
         style="width:400px; height:150px;"
         class="img-responsive"/></center>
@@ -141,7 +117,7 @@
             <div class="row">              
             <div class="col-sm-4 col-sm-offset-4">
                 <div class="Introduction">
-                <p>
+                <center><p>
                 <b>Welcome Friends!</b><br/>
             <b>Adam's Feedbag is a family friendly
              restaurant that provides great food at a 
@@ -151,15 +127,15 @@
              Come for any special occasion and if you are feeling brave 
              try the Adam's Feedbag Challenge, 5 rotisserie chickens and a pound
              of french fries!</b>
-             </p>
+             </p></center>
                 </div>
             </div>
             </div>
             </div>
         <footer class="container-fluid text-center">
             <div class="footer">
-             <h4>5678 Hello Ave. N, Oakdale, Minnesota, 55128</h4>
-         <h4>651-234-5678</h4>
+             <h3>5678 Hello Ave. N, Oakdale, Minnesota, 55128</h3>
+         <h3>651-234-5678</h3>
             </div>
         </footer>
         </div>
