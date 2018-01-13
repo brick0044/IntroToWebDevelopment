@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+    <head><title>Phantom Anthem</title>
+    <div id="background">
+        <img src="Images/abrbackground.jpg" alt="background">
+    </div>
+    
+    <!--<div class="albumCover">
+        <img src="Images/phantomanthem.jpg"
+        alt="circleImage"
+        class="img-circle"
+        style="width: 400px; height: 400px"/>
+    </div>-->
+
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+    rel="stylesheet"/>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
+</script>
+    <!--<script>
+    function play() {
+        var audio = document.getElementsByClassName("audio");
+        if (audio.paused) {
+            audio.play();
+            $('#play').removeClass('glyphicon-play-circle');
+            $('#play').addClass('glyphicon-pause');
+        }else {
+            audio.pause();
+            audio.currentTime = 0;
+            $('#play').addClass('glyphicon-play-circle');
+            $('#play').removeClass('glyphicon-pause');
+        }
+    }
+    </script>-->
+              <link href="albumStyles.css"
+        rel="stylesheet"
+        type="text/css"/>
+      <style>
+  
+   
+    </style>
+    </head>
+    <body>
+    <div class="container-fluid">
+            <div class="albumCover">
+                <img src="Images/phantomanthem.jpg"
+                alt="circleImage"
+                class="img-circle"/>
+            </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12">
+        <h1 id="AlbumTitle">Phantom Anthem</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+        <h2 id="Link"><a href = "http://www.augustburnsred.com/tablet/index.html"
+        target= "_blank">
+        August Burns Red</a></h2>
+            </div>
+        </div>
+
+        <h3 id="Date">Released: October 6, 2017</h3>
+
+        <div class="videoWrapper">
+        <iframe align= "center" width="600" height="450"
+         src="https://www.youtube.com/embed/0sWKKKNRV90" frameborder="0" gesture="media"
+          allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="bandMembers">
+        <h2 align="center">Band Members and Producers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-lg-offset-2">   
+        <ul>
+            <li>Jake Luhrs - Lead Vocals</li>
+            <li>JB Brubaker - Lead Guitar</li>
+            <li>Brent Rambler - Rhythm Guitar</li>
+            <li>Dustin Davidson - Bass, Backing Vocals</li>
+            <li>Matt Greiner - Drums</li>
+            <li>Carson Slovak - Producer</li>
+            <li>Grant McFarland - Producer</li>
+        </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+        <h2 align="center">Tracks</h2>
+        <div class="table-responsive">
+        <table class="Tracks">
+            <thead>
+            <tr>
+                <th>Track #  </th>
+                <th>Track Title</th>
+                <th>Track Length</th>
+                <th>Audio</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>King of Sorrow</td>
+                    <td>4:05</td>
+                    <td>
+                        <audio id="audio" src="Audio/King of Sorrow.mp3"></audio>
+                        <button onclick="document.getElementById('audio').play()">
+                            <span class= "glyphicon glyphicon-play">
+                        </button>
+                        <button onclick="document.getElementById('audio').pause()">
+                            <span class= "glyphicon glyphicon-pause">
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hero of the Half Truth</td>
+                    <td>5:03</td>
+                    <td>
+                        <audio id="audio1" src="Audio/Hero of the Half Truth.mp3"></audio>
+                        <button onclick="document.getElementById('audio1').play()">
+                            <span class= "glyphicon glyphicon-play"></span></button>
+                        <button onclick="document.getElementById('audio1').pause()">
+                            <span class= "glyphicon glyphicon-pause"></span></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>The Frost</td>
+                    <td>4:46</td>
+                    <td>
+                            <audio id="audio2" src="Audio/The Frost.mp3"></audio>
+                            <button onclick="document.getElementById('audio2').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio2').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Lifeline</td>
+                    <td>5:34</td>
+                    <td>
+                            <audio id="audio3" src="Audio/Lifeline.mp3"></audio>
+                            <button onclick="document.getElementById('audio3').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio3').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Invisible Enemy</td>
+                    <td>4:37</td>
+                    <td>
+                            <audio id="audio4" src="Audio/Invisible Enemy.mp3"></audio>
+                            <button onclick="document.getElementById('audio4').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio4').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Quake</td>
+                    <td>4:08</td>
+                    <td>
+                            <audio id="audio5" src="Audio/Quake.mp3"></audio>
+                            <button onclick="document.getElementById('audio5').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio5').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Coordinates</td>
+                    <td>5:11</td>
+                    <td>
+                            <audio id="audio6" src="Audio/Coordinates.mp3"></audio>
+                            <button onclick="document.getElementById('audio6').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio6').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Generations</td>
+                    <td>6:00</td>
+                    <td>
+                            <audio id="audio7" src="Audio/Generations.mp3"></audio>
+                            <button onclick="document.getElementById('audio7').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio7').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Float</td>
+                    <td>4:15</td>
+                    <td>
+                            <audio id="audio8" src="Audio/Float.mp3"></audio>
+                            <button onclick="document.getElementById('audio8').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio8').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Dangerous</td>
+                    <td>4:23</td>
+                    <td>
+                            <audio id="audio9" src="Audio/Dangerous.mp3"></audio>
+                            <button onclick="document.getElementById('audio9').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio9').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Carbon Copy</td>
+                    <td>5:39</td>
+                    <td>
+                            <audio id="audio10" src="Audio/Carbon Copy.mp3"></audio>
+                            <button onclick="document.getElementById('audio10').play()">
+                                <span class= "glyphicon glyphicon-play">
+                            </button>
+                            <button onclick="document.getElementById('audio10').pause()">
+                                <span class= "glyphicon glyphicon-pause">
+                            </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>
